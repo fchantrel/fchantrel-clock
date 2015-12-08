@@ -6,7 +6,7 @@ module.exports = function(kibana) {
 		uiExports: {
 			// Register our visualizations (a plugin can have multiple visualizations)
 			visTypes: [
-				'plugins/tr-k4p-clock/clock'
+				'plugins/fchantrel/clock'
 			]
 		}
 	});

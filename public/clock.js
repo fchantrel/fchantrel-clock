@@ -3,10 +3,10 @@
 define(function(require) {
 
 	// Include our custom CSS (LESS also works)
-	require('plugins/tr-k4p-clock/clock.css');
+	require('plugins/fchantrel-clock/clock.css');
 
 	// Create an Angular module for this plugin
-	var module = require('ui/modules').get('tr-k4p-clock');
+	var module = require('ui/modules').get('fchantrel-clock');
 	// Add a controller to this module
 	module.controller('ClockController', function($scope, $timeout) {
 
@@ -30,9 +30,9 @@ define(function(require) {
 			icon: 'fa-clock-o', // the class of the font awesome icon for this
 			description: 'Add a digital clock to your dashboards.', // description shown to the user
 			requiresSearch: false, // Cannot be linked to a search
-			template: require('plugins/tr-k4p-clock/clock.html'), // Load the template of the visualization
+			template: require('plugins/fchantrel-clock/clock.html'), // Load the template of the visualization
 			params: {
-				editor: require('plugins/tr-k4p-clock/clock-editor.html'), // Use this HTML as an options editor for this vis
+				editor: require('plugins/fchantrel-clock/clock-editor.html'), // Use this HTML as an options editor for this vis
 				defaults: { // Set default values for paramters (that can be configured in the editor)
 					format: 'HH:mm:ss'
 				}
